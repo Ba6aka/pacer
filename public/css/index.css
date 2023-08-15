@@ -1,0 +1,19 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main ul {
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 auto;
+}
+
+form input,
+form button {
+  border: solid 1px black;
+  padding: 10px;
+}
