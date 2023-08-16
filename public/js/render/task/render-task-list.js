@@ -15,7 +15,7 @@ async function renderTaskList(id) {
 
 
   data.forEach(task => {
-    parent.append(renderTask(task))
+    parent.append(renderTask(task, id))
   })
 
   main.append(parent)
