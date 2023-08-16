@@ -2,10 +2,10 @@ function renderCategory(category) {
   const element = document.createElement('li')
   element.classList.add('category-item')
   element.innerHTML = (`
-      <a href=${category}>${category}</a> 
+      <button id=${category}>${category}</button> 
   `)
 
-  document.querySelector('.task-list').append(element)
+  document.querySelector('.category-list').append(element)
 }
 
 export { renderCategory }

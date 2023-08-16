@@ -2,11 +2,11 @@ function renderTask(task) {
   const element = document.createElement('li')
   element.classList.add('task-item')
   element.innerHTML = (`
-      <span>${task}</span> 
-      <input type="checkbox">
+      <span>${task.task}</span> 
+      <input type="checkbox" ${task.checked ? 'checked' : ''}>
   `)
 
-  document.querySelector('.task-list').append(element)
+  return element
 }
 
 export { renderTask }
