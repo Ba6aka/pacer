@@ -1,3 +1,3 @@
-import { renderCategoryTaskPage } from "./js/render/pages/render-category-task-page.js"
+import { renderCategoryTaskPage } from "./js/render/pages/render-category-list-page.js"
 
 renderCategoryTaskPage()
