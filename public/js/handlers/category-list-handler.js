@@ -1,4 +1,5 @@
-import { renderTaskList } from "../render/render-task-list.js"
+import { renderFormTask } from "../render/forms/render-form-t.js"
+import { renderTaskList } from "../render/task/render-task-list.js"
 
 function categoryListHandler(e) {
   if (!e.target.id) return
@@ -11,7 +12,8 @@ function categoryListHandler(e) {
       }),
     })
       .then(res => res.json())
-      .then(data => {
+      .then((data) => {
+        renderFormTask()
         renderTaskList(data)
       })
 

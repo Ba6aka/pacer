@@ -15,6 +15,7 @@ async function handleApi(req, res) {
       const { task, category, checked } = req.body
       await setNewTask({ task, category, checked, res })
       break
+      
     case 'category-list':
       const collectionIds = await getCategoryList()
       res.end(JSON.stringify(collectionIds))

@@ -5,7 +5,7 @@ function renderCategory(category) {
       <button id=${category}>${category}</button> 
   `)
 
-  document.querySelector('.category-list').append(element)
+  return element
 }
 
 export { renderCategory }

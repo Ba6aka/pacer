@@ -1,14 +1,17 @@
 import { renderTask } from "./render-task.js"
 
 function renderTaskList(data) {
-  const parent = document.querySelector('.category-list')
+  const main = document.querySelector('main')
+  const parent = document.createElement('ul')
+
   parent.className = 'task-list'
-  parent.innerHTML = ''
+  
 
   data.forEach(task => {
     parent.append(renderTask(task))
   })
 
+  main.append(parent)
 }
 
 export { renderTaskList }

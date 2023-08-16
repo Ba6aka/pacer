@@ -1,3 +1,4 @@
+import { renderCategoryList } from "../render/category/render-category-list.js"
 
 function formSumbitHandler(event, form) {
   event.preventDefault()
@@ -10,7 +11,10 @@ function formSumbitHandler(event, form) {
         task: form.task.value,
         checked: false
       }),
-    })
+    }).then(
+      setTimeout(() => {renderCategoryList()}, 1000)
+      
+    )
 
   } catch (error) {
     console.error('Error:', error)
