@@ -1,3 +1,5 @@
+import { formSumbitHandler } from "../../handlers/form-ct-submit-handler.js"
+
 function renderCategoryTaskForm() {
   const main = document.body.querySelector('main')
   const form = document.createElement('form')
@@ -5,6 +7,7 @@ function renderCategoryTaskForm() {
   main.innerHTML = ''
 
   form.className = 'category-task'
+  form.action = 'javascript:void(0)'
 
   form.innerHTML = ` 
   <input required name="category" type="text" placeholder="category">
