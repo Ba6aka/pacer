@@ -3,7 +3,7 @@ const fs = require('fs')
 
 function handleGetReq(req, res) {
   let { url } = req
-  if (url === '/') url = '/index.html'
+  if (url === '/' || url.includes('?')) url = '/index.html'
 
   try {
     const file = fs.readFileSync('public' + url)
