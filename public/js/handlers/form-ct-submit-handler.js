@@ -12,7 +12,10 @@ function formSumbitHandler(event, form) {
         checked: false
       }),
     }).then(
-      setTimeout(() => {renderCategoryList()}, 1000)
+      setTimeout(() => {
+        renderCategoryList()
+        form.reset()
+      }, 1000)
       
     )
 
