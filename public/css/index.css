@@ -35,6 +35,30 @@ ul li button:hover {
   color: green;
 }
 
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.category-item button {
+  padding-right: 10px;
+}
+
+.category-item button img {
+  width: 20px;
+  height: 20px;
+  transition: 200ms;
+}
+
+.category-item button:nth-of-type(2):hover img {
+  width: 35px;
+  height: 35px;
+}
+
+
 .task-item {
   display: flex;
   align-items: center;
