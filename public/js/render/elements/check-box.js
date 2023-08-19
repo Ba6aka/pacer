@@ -1,4 +1,4 @@
-import {taskCheckHandler} from '../../handlers/task-check-handler.js'
+import {taskCheckHandler} from '../../handlers/task-list-handlers/task-check-handler.js'
 
 function getCheckBox(task,id) {
   const checkBox = document.createElement('input')

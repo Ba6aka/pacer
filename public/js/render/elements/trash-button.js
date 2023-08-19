@@ -4,7 +4,7 @@ function getTrashButton(name) {
 
   icon.src = './img/trash-icon.svg'
   trashButton.append(icon)
-
+  trashButton.className = 'trash-button'
   if (name) trashButton.name = name
 
   return trashButton

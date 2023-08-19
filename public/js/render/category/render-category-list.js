@@ -1,5 +1,5 @@
 import { renderCategory } from "./render-category.js"
-import { categoryListHandler } from "../../handlers/category-list-handler.js"
+import { categoryListHandler } from "../../handlers/category-list-handlers/category-list-handler.js"
 
 function renderCategoryList() {
   const main =  document.querySelector('main')

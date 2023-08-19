@@ -10,7 +10,6 @@ async function renderTaskList(id) {
 
   const main = document.querySelector('main')
   const parent = document.createElement('ul')
-
   parent.className = 'task-list'
 
 

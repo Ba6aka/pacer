@@ -1,5 +1,5 @@
-import { formTaskSumbitHandler } from "../../handlers/form-t-sumbit-handler.js"
-import { renderCategoryTaskPage } from "../pages/render-category-list-page.js"
+import { formTaskSumbitHandler } from "../../handlers/form-handlers/form-t-sumbit-handler.js"
+import { renderCategoryListPage } from "../pages/render-category-list-page.js"
 
 function renderFormTask(id) {
   const main = document.body.querySelector('main')
@@ -15,7 +15,7 @@ function renderFormTask(id) {
 
   button.innerHTML = '&#8592;'
   button.onclick = () => {
-    renderCategoryTaskPage()
+    renderCategoryListPage()
   }
 
   main.innerHTML = ''

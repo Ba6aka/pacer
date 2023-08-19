@@ -1,11 +1,13 @@
-import { renderCategoryTaskPage } from "./js/render/pages/render-category-list-page.js"
+import { renderCategoryListPage } from "./js/render/pages/render-category-list-page.js"
 import { renderTaskListPage } from "./js/render/pages/render-task-list-page.js"
+import { renderBelivePoints } from "./js/render/elements/belive-points.js"
 
+const searchParams = new URLSearchParams(location.search)
 
-if (window.location.href.includes('id')) {
-  const url = new URL("http://localhost:1508/index.html?id=homework")
-  const id = url.searchParams.get("id");
-  renderTaskListPage(id)
+if (searchParams.has("id")) {
+  renderTaskListPage(searchParams.get("id"))
 } else {
-  renderCategoryTaskPage()
+  renderCategoryListPage()
 }
+
+await renderBelivePoints()

@@ -1,4 +1,4 @@
-import { formSumbitHandler } from "../../handlers/form-ct-submit-handler.js"
+import { formSumbitHandler } from "../../handlers/form-handlers/form-ct-submit-handler.js"
 
 function renderCategoryTaskForm() {
   const main = document.body.querySelector('main')

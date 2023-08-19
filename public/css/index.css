@@ -43,21 +43,19 @@ ul li button:hover {
   margin-top: 10px;
 }
 
-.category-item button {
+.trash-button {
   padding-right: 10px;
 }
 
-.category-item button img {
+.trash-button img {
   width: 20px;
   height: 20px;
   transition: 200ms;
 }
-
-.category-item button:nth-of-type(2):hover img {
+.trash-button:hover img {
   width: 35px;
   height: 35px;
 }
-
 
 .task-item {
   display: flex;

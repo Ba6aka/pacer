@@ -1,4 +1,4 @@
-import { renderCategoryList } from "../render/category/render-category-list.js"
+import { renderCategoryList } from "../../render/category/render-category-list.js"
 
 function formSumbitHandler(event, form) {
   event.preventDefault()

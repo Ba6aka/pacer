@@ -1,4 +1,4 @@
-import { renderTaskListPage } from "../render/pages/render-task-list-page.js"
+import { renderTaskListPage } from "../../render/pages/render-task-list-page.js"
 
 function formTaskSumbitHandler(event, id,form) {
   event.preventDefault()
