@@ -1,4 +1,3 @@
-import { renderCheckBox } from "../elements/check-box.js"
 import { getTakeQuestButton } from "../elements/take-quest-button.js"
 import { getTrashButton } from "../elements/trash-button.js"
 
