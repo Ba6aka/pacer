@@ -1,4 +1,5 @@
 import { renderCheckBox } from "../elements/check-box.js"
+import { getTakeQuestButton } from "../elements/take-quest-button.js"
 import { getTrashButton } from "../elements/trash-button.js"
 
 function renderTask(task, id) {
@@ -10,8 +11,8 @@ function renderTask(task, id) {
       <span>${task.task}</span> 
   `)
 
-  element.append(renderCheckBox(task, id))
   element.append(trashButton)
+  element.append(getTakeQuestButton())
   return element
 }
 
