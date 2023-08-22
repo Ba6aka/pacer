@@ -5,9 +5,8 @@ import { renderBelivePoints } from "./js/render/elements/belive-points.js"
 const searchParams = new URLSearchParams(location.search)
 
 if (searchParams.has("id")) {
-  renderTaskListPage(searchParams.get("id"))
+  await renderTaskListPage(searchParams.get("id"))
 } else {
-  renderCategoryListPage()
+  await renderCategoryListPage()
 }
 
-await renderBelivePoints()

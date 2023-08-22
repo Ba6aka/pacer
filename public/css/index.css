@@ -18,11 +18,11 @@ form button {
   padding: 10px;
 }
 
-ul li {
+.category-list li {
   text-align: center;
 }
 
-ul li button {
+.category-list li button {
   border: none;
   outline: none;
   background: none;
@@ -31,7 +31,7 @@ ul li button {
 
 }
 
-ul li button:hover {
+.category-list li button:hover {
   color: green;
 }
 
@@ -52,19 +52,20 @@ ul li button:hover {
   height: 20px;
   transition: 200ms;
 }
+
 .trash-button:hover img {
   width: 35px;
   height: 35px;
 }
 
+/*/ task-item/*/
 .task-item {
   display: flex;
+  gap: 10px;
   align-items: center;
-  justify-content: space-between;
-  font-size: 22px;
-  margin-top: 10px;
 }
 
-.task-item span {
-  padding-right: 10px;
+.belive-points {
+  font-size: 24px;
+  text-align: center;
 }

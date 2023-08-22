@@ -1,3 +1,4 @@
+import { getTakeQuestButton } from "../elements/take-quest-button.js"
 import { renderTask } from "./render-task.js"
 
 async function renderTaskList(id) {
@@ -15,6 +16,7 @@ async function renderTaskList(id) {
 
   data.forEach(task => {
     parent.append(renderTask(task, id))
+    
   })
 
   main.append(parent)
