@@ -1,5 +1,5 @@
-import { getTakeQuestButton } from "../elements/take-quest-button.js"
 import { renderTask } from "./render-task.js"
+import { getTaskListHeader } from "./task-list-header.js"
 
 async function renderTaskList(id) {
   const response = await fetch(`/api/task-list`, {
@@ -16,7 +16,6 @@ async function renderTaskList(id) {
 
   data.forEach(task => {
     parent.append(renderTask(task, id))
-    
   })
 
   main.append(parent)

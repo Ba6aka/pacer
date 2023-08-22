@@ -9,6 +9,7 @@ function renderFormTask(id) {
   form.className = 'task'
   form.innerHTML = ` 
   <input required name="task" type="text" placeholder="task">
+  <input required name="difficulty" type="number" placeholder="difficulty">
   <button type="submit">+</button>
   `
   form.onsubmit = (e) => formTaskSumbitHandler(e, id, form)

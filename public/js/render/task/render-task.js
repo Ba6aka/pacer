@@ -7,11 +7,12 @@ function renderTask(task, id) {
 
   element.classList.add('task-item')
   element.innerHTML = (`
-      <span>${task.task}</span> 
+      <span>${task.task}| difficulty - ${task.difficulty}</span> 
   `)
 
   element.append(trashButton)
   element.append(getTakeQuestButton())
+
   return element
 }
 

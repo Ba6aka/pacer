@@ -13,7 +13,7 @@ async function renderBelivePoints() {
 
   const h2 = document.createElement('h2')
   h2.className = 'belive-points'
-  h2.textContent = `Belive Points: ${belivePoints}`
+  h2.textContent = `Confidence Points: ${belivePoints}`
 
   document.querySelector('main').prepend(h2)
 }

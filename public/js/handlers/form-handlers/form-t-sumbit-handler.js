@@ -8,6 +8,7 @@ function formTaskSumbitHandler(event, id,form) {
       method: 'POST',
       body: JSON.stringify({
         category: id,
+        difficulty: form.difficulty.value,
         task: form.task.value,
         checked: false
       }),

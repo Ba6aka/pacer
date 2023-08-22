@@ -60,6 +60,7 @@ form button {
 
 /*/ task-item/*/
 .task-item {
+  font-size: 18px;
   display: flex;
   gap: 10px;
   align-items: center;
